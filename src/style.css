@@ -27,10 +27,16 @@ body {
 
 .myWork-section {
     border: 4px dashed #42f572;
-    font-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap:20px
 }
 
 .contactMe-section {
     border: 4px dashed #f59e42;
     font-size: 50px;
+}
+
+.card-container{
+    border: 4px dashed #f542ec;
 }
