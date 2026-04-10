@@ -123,16 +123,13 @@ body {
 
 .myWork-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 35px;
     row-gap: 50px;
     margin-top: 10px;
+    padding: 0px 40px;
 }
 
-.contactMe-section {
-    border: 4px dashed #f59e42;
-    font-size: 50px;
-}
 
 .card-container {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -179,10 +176,40 @@ ul {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 0;
+    margin-top:0;
+    padding: 0px 40px;
+    letter-spacing: 2px;
 }
 
 a {
     color: inherit;
+}
+
+.contactMe-section{
+    background: var(--bg-dark);
+    color: var(--text-light);
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contactMe-section > h3{
+    font-size: 40px;
+    margin-bottom: 0;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+.contactMe-section > p{
+    font-size: 25px;
+    margin-bottom: 0%;
+}
+
+.contact-links >ul{
+    display: flex;
+    gap: 10px;
+    padding: 0%;
 }
 
 @media (max-width: 600px) {
