@@ -41,7 +41,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
     gap: 40px;
-    /* margin: 30px 50px; */
     min-height: 100vh;
 }
 
@@ -53,6 +52,7 @@ body {
     background: var(--bg-dark);
     padding: 80px 40px;
     z-index: 1;
+    overflow: visible;
 }
 
 .curve {
@@ -113,12 +113,12 @@ body {
 }
 
 .aboutMe-links a {
-  transition: all 0.2s ease;
+    transition: all 0.2s ease;
 }
 
 .aboutMe-links a:hover {
-  color: var(--btn-primary);
-  transform: translateY(-2px);
+    color: var(--btn-primary);
+    transform: translateY(-2px);
 }
 
 .myWork-section {
@@ -183,4 +183,38 @@ ul {
 
 a {
     color: inherit;
+}
+
+@media (max-width: 600px) {
+
+    .aboutMe-section {
+        flex-direction: column;
+        background: var(--bg-dark);
+    }
+
+    .aboutMe-image>img {
+        max-width: 250px;
+        height: auto;
+    }
+
+    .aboutMe-image{
+        z-index: 2;
+    }
+
+    .aboutMe-info{
+        margin-top: -30px;
+        z-index: 1;
+        border-radius: 12px;
+        align-items: center;
+    }
+
+    .aboutMe-links{
+        justify-content: center;
+        padding: 0;
+        gap: 30px;
+    }
+
+    .curve {
+        height: 180px;
+    }
 }
