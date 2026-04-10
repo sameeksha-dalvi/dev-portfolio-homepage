@@ -191,7 +191,6 @@ a {
     padding: 10px 40px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
 }
 
 .contactMe-section > h3{
@@ -213,6 +212,10 @@ a {
 }
 
 @media (max-width: 600px) {
+
+    .contactMe-section > h3, #myWork-heading, .aboutMe-info>h3{
+        font-size: 30px;
+    }
 
     .aboutMe-section {
         flex-direction: column;
@@ -243,5 +246,21 @@ a {
 
     .curve {
         height: 180px;
+    }
+
+    #myWork-heading{
+        text-align: center;
+    }
+
+    .contactMe-section{
+        align-items: center;
+    }
+
+    .contactMe-section > p{
+        text-align: center;
+        font-size: 20px;
+    }
+    .contact-links >ul{
+        gap:20px;
     }
 }
