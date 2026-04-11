@@ -19,12 +19,13 @@
             </div>
             <div class="aboutMe-info">
                 <h3>About Me</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, aut. Ducimus reiciendis sit quasi,
-                    nam sed voluptates consectetur cupiditate ipsa quaerat hic laudantium, ad, ratione nobis. Illo hic
-                    assumenda eius?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, aut. Ducimus
-                    reiciendis sit quasi,
-                    nam sed voluptates consectetur cupiditate ipsa quaerat hic laudantium, ad, ratione nobis. Illo hic
-                    assumenda eius?</p>
+                <h2 class="about-intro">Hi, I'm Sameeksha</h2>
+                <p class="about-text">
+                    Frontend Developer currently exploring backend technologies as well.
+                    I enjoy building projects and figuring things out by doing.
+                    I apply what I learn through hands-on projects and continuous learning.
+                    Outside of that, I try to contribute to open source projects to challenge myself and grow.
+                </p>
                 <ul class="aboutMe-links">
                     <li><a href="https://github.com/sameeksha-dalvi" target="_blank" aria-label="Github Link">
                             <svg class="project-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
@@ -60,7 +61,7 @@
                 <path d="M0,130 C500,130 1000,50 1440,30 L1440,150 L0,150 Z"></path>
             </svg>
         </div>
-        <h2 id="myWork-heading">My work</h2>
+        <h2 id="myWork-heading">My Work</h2>
         <div class="myWork-section">
             <div class="card-container">
                 <div class="card-image"><img class="project-img" src="../assets/images/battleship-game-screenshot.png"
@@ -237,9 +238,61 @@
                 </div>
             </div>
         </div>
+        <div class="open-source-section">
+            <h3>Open Source Contributions</h3>
+
+            <div class="os-item">
+                <div class="os-date">Mar 2026</div>
+                <div class="os-content">
+                    <h5>Mozilla Firefox</h5>
+                    <p>
+                        Removed redundant lazy preference getters in the sidebar module.
+                        <a href="https://phabricator.services.mozilla.com/D289042" target="_blank">
+                            <svg class="project-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                                    </svg>
+                        </a>
+                    </p>
+                    <p>
+                        Added accessible naming to the Delete from History dialog to improve screen reader support
+                        <a href="https://phabricator.services.mozilla.com/D289633" target="_blank"><svg class="project-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                                    </svg></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="os-item">
+                <div class="os-date">Jan 2026</div>
+                <div class="os-content">
+                    <h5>The Odin Project</h5>
+                    <p>
+                        Contributed to curriculum documentation fixes and improvements.
+                        <a href="https://github.com/TheOdinProject/curriculum/pulls?q=is%3Apr+author%3Asameeksha-dalvi+is%3Amerged"
+                            target="_blank"><svg class="project-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z" />
+                                    </svg></a>
+                    </p>
+                </div>
+            </div>
+        </div>
         <div class="contactMe-section">
             <h3>Contact Me</h3>
-            <p>Open to full-stack opportunities and collaborations.</p>
+            <div class="contact-content">
+                <div class="contact-text">
+                    <p>Open to full-stack opportunities and collaborations.</p>
+                </div>
+
+                <a href="mailto:sameekshadalvi7@gmail.com" class="email-btn">
+                    Email Me
+                </a>
+            </div>
             <div class="contact-links">
                 <ul>
                     <li><a href="https://github.com/sameeksha-dalvi" target="_blank" aria-label="Github Link">
@@ -247,13 +300,6 @@
                                 fill="currentColor">
                                 <path
                                     d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
-                            </svg>
-                        </a></li>
-                    <li><a href="mailto:sameekshadalvi7@gmail.com" aria-label="Email">
-                            <svg class="project-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="currentColor">
-                                <path
-                                    d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z" />
                             </svg>
                         </a></li>
                     <li><a href="https://x.com/sameekshadalvi7" target="_blank" aria-label="Twitter Link">
