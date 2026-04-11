@@ -360,7 +360,7 @@ a {
 
 .os-date {
     min-width: 80px;
-    font-size: 13px;
+    font-size: 15px;
     color: var(--text-secondary);
     font-weight: 700;
     margin-top: 5px;
@@ -380,10 +380,34 @@ a {
     line-height: 1.5;
 }
 
-.os-content a {
-    padding: 0;
-    margin: 0;
+.os-details{
+    display: flex;
+    gap:5px;
 }
+
+
+.os-link a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: var(--bg-dark);
+    text-decoration: none;   /* removes underline */
+
+    padding: 10px 12px;
+    border-radius: 8px;
+
+    transition: all 0.2s ease;
+}
+
+.os-link a:hover {
+    background: rgba(245, 158, 11, 0.12); /* soft accent glow */
+    transform: translateY(-2px);
+}
+
 
 @media (max-width: 600px) {
 
@@ -437,8 +461,22 @@ a {
         height: 180px;
     }
 
-    #myWork-heading {
-        text-align: center;
+
+    .os-item{
+        flex-direction: column;
+        gap:20px
+    }
+
+    .os-content h5,.project-name {
+        font-size: 20px;
+    }
+
+    .os-content p,.project-description {
+        font-size: 16px;
+    }
+
+    .os-content h5{
+        margin-bottom: 10px;
     }
 
     .contactMe-section {
@@ -473,5 +511,18 @@ a {
     .contact-text > p{
         text-align: center;
         font-size: 18px;
+    }
+
+    .os-details{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    .os-link a{
+        padding: 4px 4px;
+    }
+
+    .os-date {
+        font-size: 13px;
     }
 }
