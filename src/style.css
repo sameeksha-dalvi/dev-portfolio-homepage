@@ -415,7 +415,7 @@ a {
     #myWork-heading,
     .aboutMe-info>h3,
     .open-source-section>h3 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .aboutMe-info>h3,.contactMe-section>h3 {
@@ -433,6 +433,7 @@ a {
     .aboutMe-section {
         flex-direction: column;
         background: var(--bg-dark);
+        padding-top: 50px;
     }
 
     .aboutMe-image>img {
@@ -488,7 +489,7 @@ a {
         font-size: 20px;
     }
 
-    .contactMe-section>h3 {
+    .contactMe-section>h3,#myWork-heading {
         text-align: center;
         width: 50%;
     }
@@ -525,4 +526,11 @@ a {
     .os-date {
         font-size: 13px;
     }
+
+    .myWork-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;   
+    }
+
 }
