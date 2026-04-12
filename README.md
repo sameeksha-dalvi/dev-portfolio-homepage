@@ -1,3 +1,18 @@
-# Homepage Project
+# Responsive Homepage / Portfolio
 
-This is final HTML/CSS project, a responsive homepage fo portfolio as part of The Doin Project curriculam.
+This project is a responsive homepage built using HTML and CSS, adapted into a personal portfolio layout.
+
+## Live Demo
+
+https://sameeksha-dalvi.github.io/dev-portfolio-homepage/
+
+## Screenshots
+
+### Desktop
+![Desktop](./screenshots/desktop.png)
+
+### Tablet
+![Tablet](./screenshots/tablet.png)
+
+### Mobile
+![Mobile](./screenshots/mobile.png)
