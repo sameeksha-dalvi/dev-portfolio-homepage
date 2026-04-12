@@ -380,9 +380,9 @@ a {
     line-height: 1.5;
 }
 
-.os-details{
+.os-details {
     display: flex;
-    gap:5px;
+    gap: 5px;
 }
 
 
@@ -395,7 +395,7 @@ a {
     font-weight: 600;
 
     color: var(--bg-dark);
-    text-decoration: none;   /* removes underline */
+    text-decoration: none;
 
     padding: 10px 12px;
     border-radius: 8px;
@@ -404,10 +404,65 @@ a {
 }
 
 .os-link a:hover {
-    background: rgba(245, 158, 11, 0.12); /* soft accent glow */
+    background: rgba(245, 158, 11, 0.12);
     transform: translateY(-2px);
 }
 
+/* for tablet view */
+
+@media (max-width: 1024px) {
+
+    .contactMe-section>h3,
+    #myWork-heading,
+    .aboutMe-info>h3,
+    .open-source-section>h3 {
+        font-size: 30px;
+    }
+
+    .aboutMe-section {
+        display: block;
+        padding: 80px 40px;
+    }
+
+    .aboutMe-image {
+        float: left;
+        margin-right: -100px;
+        margin-top: -50px;
+        margin-left: -10px;
+    }
+
+    .aboutMe-image img {
+        max-width: 300px;
+        border-radius: 12px;
+    }
+
+    .aboutMe-info {
+        padding-left: 120px;
+        border-radius: 12px;
+
+    }
+
+    .aboutMe-info>h3 {
+        width: 40%;
+    }
+
+    .email-btn {
+        margin-right: 100px;
+         font-size: 18px;
+    }
+
+    .aboutMe-info>p,
+    .project-description,
+    .os-content p {
+        font-size: 16px;
+    }
+
+    
+
+}
+
+
+/* for mobile view */
 
 @media (max-width: 600px) {
 
@@ -418,22 +473,25 @@ a {
         font-size: 28px;
     }
 
-    .aboutMe-info>h3,.contactMe-section>h3 {
+    .aboutMe-info>h3,
+    .contactMe-section>h3 {
         margin-top: 20px;
         text-align: center;
         width: 50%;
     }
 
 
-    .open-source-section>h3{
+    .open-source-section>h3 {
         text-align: center;
         width: 100%;
     }
 
     .aboutMe-section {
+        display: flex;
         flex-direction: column;
         background: var(--bg-dark);
         padding-top: 50px;
+        align-items: center;
     }
 
     .aboutMe-image>img {
@@ -442,7 +500,11 @@ a {
     }
 
     .aboutMe-image {
+        float: none;
+        margin: 0;
         z-index: 2;
+        display: flex;
+        justify-content: center;
     }
 
     .aboutMe-info {
@@ -450,6 +512,7 @@ a {
         z-index: 1;
         border-radius: 12px;
         align-items: center;
+        padding-left: 24px;
     }
 
     .aboutMe-links {
@@ -463,20 +526,22 @@ a {
     }
 
 
-    .os-item{
+    .os-item {
         flex-direction: column;
-        gap:20px
+        gap: 20px
     }
 
-    .os-content h5,.project-name {
+    .os-content h5,
+    .project-name {
         font-size: 20px;
     }
 
-    .os-content p,.project-description {
+    .os-content p,
+    .project-description {
         font-size: 16px;
     }
 
-    .os-content h5{
+    .os-content h5 {
         margin-bottom: 10px;
     }
 
@@ -489,7 +554,8 @@ a {
         font-size: 20px;
     }
 
-    .contactMe-section>h3,#myWork-heading {
+    .contactMe-section>h3,
+    #myWork-heading {
         text-align: center;
         width: 50%;
     }
@@ -509,17 +575,17 @@ a {
         margin-bottom: 10px;
     }
 
-    .contact-text > p{
+    .contact-text>p {
         text-align: center;
         font-size: 18px;
     }
 
-    .os-details{
+    .os-details {
         flex-direction: column;
         margin-bottom: 10px;
     }
 
-    .os-link a{
+    .os-link a {
         padding: 4px 4px;
     }
 
@@ -527,10 +593,10 @@ a {
         font-size: 13px;
     }
 
-    .myWork-header{
+    .myWork-header {
         display: flex;
         justify-content: center;
-        align-items: center;   
+        align-items: center;
     }
 
 }
